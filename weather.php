@@ -2,7 +2,7 @@
 	$location = "";
 
 	if(array_key_exists('search', $_GET)){
-		$url="http://api.openweathermap.org/data/2.5/weather?q=".$_GET['search']."&appid=b696056ea78f8369f7268e14a069e6f3";
+		$url="http://api.openweathermap.org/data/2.5/weather?q=".$_GET['search']."&appid=";
 		$cont = file_get_contents($url);
 
 		$addressArray = json_decode($cont,true);
